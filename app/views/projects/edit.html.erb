@@ -1,6 +1,20 @@
-<h1>Editing Project</h1>
+<style>
+body {
+    background-color: #613385;
+    color: #FFFFFF;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #613385; /* Replace with your background color */
+  }
+</style>
+<hr>
+<hr>
+<hr>
+<h1>Edit Contact Info</h1>
 
-<%= render 'form', project: @project %>
+<%= render 'form', project: @project %> </th>
 
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Show', @project, class: "btn btn-warning text-black" %> </th> |
+<%= link_to 'Back', projects_path, class: "btn btn-warning text-black" %>
