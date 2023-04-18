@@ -1,0 +1,50 @@
+<%= form_with(model: project) do |form| %>
+  <% if project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+        <% project.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name, "Name:" %> </th>
+    <br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Class_Type, "Class Type:" %>
+    <br>
+    <%= form.text_area :Class_Type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Class_Number, "Class Number: " %>
+    <%= form.number_field :Class_Number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Class_Start, "Class Start: " %>
+    <%= form.date_select :Class_Start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Class_Finish, "Class Finish: " %>
+    <%= form.date_select :Class_Finish %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Contact_Info, "Contact Info: " %>
+    <br>
+    <%= form.text_area :Contact_Info %>
+  </div>
+<br>
+  <div class="actions">
+    <%= form.submit "Save to Database", class: "btn btn-info text-white" %>
+  </div>
+<% end %>

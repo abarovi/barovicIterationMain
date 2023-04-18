@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<style>
+body {
+    background-color: #CAE7DF;
+    color: #292930;
+  }
+  .table-custom {
+    background-color: #32064A;
+  }
+  
+  .table-custom td, .table-custom th {
+    color: white;
+    border-color: white;
+  }
+</style>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="container">
+        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/cd/d93036e1794fa2a0d25777352561d0/Contact_Tracing_icon_new.png?auto=format%2Ccompress&dpr=1" class="img-fluid" alt="Contact Tracing Image">
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="container">
+      <img src="data:image/png;base64,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" alt="Contact Info">
+
+    <% @projects.each do |project| %> </th>
+      <div class="container">
+      <table class="table table-bordered table-custom">
+  <thead>
+    <tr>
+      <th class="text-lg">Name</th>
+      <th class="text-lg">Class type</th>
+      <th class="text-lg">Class number</th>
+      <th class="text-lg">Class start</th>
+      <th class="text-lg">Class finish</th>
+      <th class="text-lg">Contact info</th>
+      <th colspan="3">Options:</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td align="right"><%= project.name %></td>
+        <td><%= project.Class_Type %></td>
+        <td><%= project.Class_Number %></td>
+        <td><%= project.Class_Start %></td>
+        <td><%= project.Class_Finish %></td>
+        <td><%= project.Contact_Info %></td>
+        <td><%= link_to 'Show', project, class: "btn btn-warning text-black" %></td>
+        <td><%= link_to 'Edit', edit_project_path(project), class: "btn btn-warning text-black" %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning text-black" %></td>
+      </tr>
+      </div>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Add New Contact Info', new_project_path, class: "btn btn-info btn-lg text-white" %></td>
+
+</div>
+    </div>
+  </div>
+</div>
+<br>
+

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  Class_Type: MyText
+  Class_Number: 1
+  Class_Start: 2023-04-03
+  Class_Finish: 2023-04-03
+  Contact_Info: MyText
+
+two:
+  name: MyString
+  Class_Type: MyText
+  Class_Number: 1
+  Class_Start: 2023-04-03
+  Class_Finish: 2023-04-03
+  Contact_Info: MyText
