@@ -28,6 +28,7 @@ RSpec.feature "Projects", type: :feature do
         expect(page).to have_content("Class type can't be blank")
       end
     end
+    
     scenario "User creates a new project with valid attributes" do
         visit new_project_path
     
@@ -44,7 +45,6 @@ RSpec.feature "Projects", type: :feature do
         expect(page).to have_content("101")
         expect(page).to have_content("Contact Me!")
       end
-    
       scenario "User attempts to create a new project with invalid attributes" do
         visit new_project_path
     
@@ -55,4 +55,5 @@ RSpec.feature "Projects", type: :feature do
         expect(page).to have_content("Class number can't be blank")
         expect(page).to have_content("Contact info can't be blank")
       end
+      
 end
